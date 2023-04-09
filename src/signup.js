@@ -4,9 +4,14 @@ function signup() {
   return (
     <section class='vh-100 bg-image'>
       <div class='d-flex justify-content-center h-100'>
-        <div class='card '>
+        <div class='cardSignup '>
           <div class='card-body p-5'>
-            <h2 class='text-uppercase text-center mb-5'>Create an account</h2>
+            <h2
+              class='text-uppercase text-center mb-5'
+              style={{ color: 'white' }}
+            >
+              Create an account
+            </h2>
 
             <form>
               <div class='form-outline mb-4'>
@@ -55,10 +60,15 @@ function signup() {
                 </button>
               </div>
 
-              <p class='text-center text-muted mt-5 mb-0'>
+              <p
+                class='text-center text-muted mt-5 mb-0'
+                style={{ color: 'black' }}
+              >
                 Have already an account?
                 <a href='/login' class='fw-bold text-body'>
-                  <u>Login here</u>
+                  <u style={{ color: 'white', paddingLeft: '30px' }}>
+                    Login here
+                  </u>
                 </a>
               </p>
             </form>

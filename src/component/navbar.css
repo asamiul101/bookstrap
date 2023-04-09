@@ -1,0 +1,12 @@
+.navHeader {
+  padding-left: 20px;
+  margin: 10px;
+  font-family: cursive;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0;
+}

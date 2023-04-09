@@ -1,17 +1,20 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
+import './navbar.css';
 
-function navbar() {
+function Navbar() {
   return (
-    <Navbar expand='lg'>
-      <Container fluid style={{ backgroundColor: 'blueviolet' }}>
-        <Navbar.Brand href='/'>BookStrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls='navbarScroll' />
-        <Navbar.Collapse id='navbarScroll'></Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <div className='navbar'>
+      <div className='navHeader'>
+        <Link
+          to='/'
+          style={{ textDecoration: 'none', color: 'whitesmoke', fontSize: 36 }}
+        >
+          BookStrap
+        </Link>
+      </div>
+    </div>
   );
 }
 
-export default navbar;
+export default Navbar;

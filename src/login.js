@@ -9,7 +9,7 @@ function Login() {
       <div class='d-flex justify-content-center h-100'>
         <div class='card'>
           <div class='card-header'>
-            <h3>Sign In</h3>
+            <h3 style={{ color: 'white' }}>Sign In</h3>
           </div>
           <div class='card-body'>
             <form>
@@ -23,6 +23,7 @@ function Login() {
                   type='email'
                   placeholder='email'
                   id='email'
+                  className='inputLogin'
                   value={email}
                 />
               </div>
@@ -36,6 +37,7 @@ function Login() {
                   type='password'
                   placeholder='password'
                   id='password'
+                  className='inputLogin'
                   value={password}
                 />
               </div>

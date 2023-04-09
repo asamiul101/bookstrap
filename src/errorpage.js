@@ -1,11 +1,7 @@
 import React from 'react';
 
 function errorpage() {
-  return (
-    <div>
-      <h1>Error</h1>
-    </div>
-  );
+  return <div className='error'>Error: 404</div>;
 }
 
 export default errorpage;

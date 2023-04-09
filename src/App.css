@@ -1,18 +1,49 @@
 img {
-  width: 35%;
-  height: 50vh;
-  margin-left: 190px;
+  width: 40%;
+  height: 60vh;
+  margin-left: 150px;
   position: absolute;
-  border-radius: 1rem;
+  border-radius: 10rem;
 }
-
 .homeBody {
   background-color: rgb(255, 255, 255);
+}
+.loginBtn {
+  position: absolute;
+  text-decoration: none;
+  font-family: cursive;
+  color: #ffffff;
+  font-size: larger;
+  margin-top: -120px;
+  margin-left: 730px;
+  width: fit-content;
+}
+.loginBtn:hover {
+  text-decoration: none;
+  color: black;
+}
+.signupBtn {
+  position: absolute;
+  text-decoration: none;
+  font-family: cursive;
+  color: #ffffff;
+  font-size: larger;
+  margin-top: -120px;
+  margin-left: 800px;
+  width: fit-content;
+}
+.signupBtn:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .App {
   text-align: center;
-  background-color: li;
+  /*background-color: #f8f0e3;*/
+  background-image: url('https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/_rpzEhZSjM24K-6tidiu5ip3CSA=/1660x934/smart/filters:no_upscale()/cloudfront-us-east-1.images.arcpublishing.com/dmn/X5GNVXZ5MS2V4CUACHV5E2ZPGI.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .homeBtn {
@@ -21,13 +52,13 @@ img {
 
 .button-20 {
   appearance: button;
-  background-color: #8a2be2;
+  background-color: brown;
   background-image: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0)
   );
-  border: 1px solid #4d4ae8;
+  border: 1px solid black;
   border-radius: 1rem;
   box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
     rgba(46, 54, 80, 0.075) 0 1px 1px;
@@ -57,21 +88,21 @@ img {
 }
 
 .button-20:hover {
-  background-color: #3733e5;
-  border-color: #3733e5;
+  background-color: rgb(112, 5, 5);
+  border-color: black;
 }
 
 .button-20:focus {
-  background-color: #413fc5;
-  border-color: #3e3bba;
+  background-color: rgb(112, 5, 5);
+  border-color: black;
   box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
     rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
 }
 
 .button-20:active {
-  background-color: #3e3bba;
+  background-color: rgb(112, 5, 5);
   background-image: none;
-  border-color: #3a38ae;
+  border-color: black;
   box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
 }
 
@@ -88,13 +119,21 @@ img {
 }
 
 .homeText {
-  width: 60%;
-  height: 50vh;
+  width: 80%;
+  height: 60vh;
   border: 0.3rem;
   border-radius: 1rem;
   margin-left: 20px;
-  padding: 90px;
+  padding: 110px;
   margin-top: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: cursive;
+  font-size: larger;
+  color: #ffffff;
+}
+
+p {
+  width: 50%;
 }
 
 .container {
@@ -107,43 +146,30 @@ img {
   margin-top: 200px;
   margin-bottom: auto;
   width: 900px;
-  background-color: rgba(103, 54, 116, 0.5) !important;
+  background-color: rgb(0, 0, 0, 0.7) !important;
 }
 
-.social_icon span {
-  font-size: 60px;
-  margin-left: 10px;
-  color: #ffc312;
-}
-
-.social_icon span:hover {
-  color: white;
-  cursor: pointer;
-}
-
-.card-header h3 {
-  color: white;
-}
-
-.social_icon {
-  position: absolute;
-  right: 20px;
-  top: -45px;
+.cardSignup {
+  height: 620px;
+  margin-top: 80px;
+  margin-bottom: auto;
+  width: 900px;
+  background-color: rgb(0, 0, 0, 0.7) !important;
 }
 
 .input-group-prepend span {
   width: 50px;
-  background-color: blueviolet;
+  background-color: brown;
   color: black;
   border: 0 !important;
   padding: 30px;
 }
 
-input {
+.inputLogin {
   width: 800px;
 }
 
-input:focus {
+.inputLogin:focus {
   outline: 0 0 0 0 !important;
   box-shadow: 0 0 0 0 !important;
 }
@@ -159,17 +185,6 @@ input:focus {
   margin-right: 5px;
 }
 
-.login_btn {
-  color: black;
-  background-color: #ffc312;
-  width: 100px;
-}
-
-.login_btn:hover {
-  color: black;
-  background-color: white;
-}
-
 .links {
   color: white;
 }
@@ -181,4 +196,68 @@ input:focus {
 .form-control {
   padding: 30px;
   width: 50px;
+}
+.story {
+  height: 20vh;
+  margin-left: 500px;
+  border-radius: 0.8rem;
+  width: 50%;
+  text-align: start;
+  background-color: #ffffff;
+}
+
+.storyInput {
+  border-radius: 0.8rem;
+  height: 20vh;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+}
+
+.error {
+  width: 50%;
+  height: 60vh;
+  font-size: 120px;
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  align-content: center;
+  padding-top: 130px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0.7rem;
+  margin-left: 450px;
+  margin-top: 100px;
+}
+
+.scroll-bg {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 50%;
+  margin-top: 40px;
+  margin-left: 500px;
+  padding: 40px;
+  border-radius: 0.8rem;
+}
+
+.scroll-div {
+  height: 400px;
+  width: auto;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.scroll-object {
+  width: auto;
+  color: #ffffff;
+  font-family: cursive;
+  font-size: 32px;
+  padding: 20px;
+}
+
+input {
+  border: rgb(255, 255, 255);
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  overflow-y: scroll;
 }
